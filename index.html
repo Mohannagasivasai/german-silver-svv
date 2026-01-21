@@ -1,0 +1,835 @@
+ 
+<!DOCTYPE html>
+<html lang="te">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+<title>German Silver SVV | Sri Venkata Vinayaka German Silver</title>
+
+
+  <!-- SEO -->
+ <meta name="description" content="German Silver SVV – Sri Venkata Vinayaka German Silver 
+ offers premium German silver pooja items, gifts, idols, lamps and trays in Kakinada." />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: rgb(230, 230, 225);
+
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: rgba(244, 91, 56, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    /* brand text next to logo */
+    .brand { display:flex; align-items:center; gap:10px; }
+    .brand img { display:block; width:56px; height:56px; object-fit:cover; border-radius:50%; }
+    .brand-text {
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.45);
+      white-space: nowrap;
+      margin-left: 6px;
+    }
+
+    /* Address grid with map */
+    .address-grid {
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+      padding: 28px;
+      max-width: 1200px;
+      margin: 24px auto 40px;
+    }
+
+    .map { flex: 2; min-height: 360px; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 28px rgba(0,0,0,0.12); }
+    .map iframe { width: 100%; height: 100%; border: 0; display:block; }
+
+    .address-card { flex: 1; background: #fff; padding: 22px 26px; border-radius: 12px; box-shadow: 0 8px 28px rgba(0,0,0,0.06); color: #222; }
+    .address-card h3 { margin: 0 0 8px; font-size: 1.15rem; }
+    .address-card .muted { color: #666; margin-bottom: 12px; }
+    .address-card .label { font-weight: 700; color: #333; margin-top: 12px; }
+    .address-card p { margin: 8px 0; }
+    .address-card address p { font-style: normal; }
+
+    .phone-link { color: #d94f2f; font-weight: 700; text-decoration: none; }
+    .cta-wrap { margin-top: 18px; }
+    .cta { display: inline-block; background: #d94f2f; color: white; padding: 10px 16px; border-radius: 8px; text-decoration: none; font-weight: 700; }
+    .small-link { display: inline-block; margin-left: 10px; color: #555; text-decoration: none; font-size: 0.95rem; }
+
+    @media (max-width: 900px) {
+      .address-grid { flex-direction: column; padding: 16px; }
+      .map { min-height: 260px; }
+      .address-card { padding: 16px; }
+      .brand-text { font-size: 0.95rem; }
+    }
+
+    @media (max-width: 600px) {
+      .brand-text { font-size: 0.9rem; }
+      .map { min-height: 200px; }
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #666;
+    }
+
+    .language-btn {
+      padding: 5px 10px;
+      border: 1px solid #666;
+      border-radius: 5px;
+      background: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      background:
+        linear-gradient(rgba(139, 46, 26, 0.7), rgba(139, 46, 26, 0.7)),
+        url('../images/hero-background.jpg') center center / cover no-repeat;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+      padding: 0 20px;
+      border-bottom: 4px solid rgba(139, 46, 26, 0.7);
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 15px;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.4em;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 50px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.3s;
+      cursor: pointer;
+      width: 100%;
+      max-width: 350px;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
+
+    .card p {
+      font-weight: 600;
+      padding: 10px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+
+    footer .bottom {
+      border-top: 1px solid #555;
+      margin-top: 10px;
+      padding-top: 10px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    .visually-hidden {
+      position: absolute;
+      left: -9999px;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 1000;
+    }
+
+    .popup img {
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    #popupCaption {
+      color: #ffffff;
+      /* ✅ visible on dark popup */
+      font-family: "Segoe UI", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+
+    .close-btn,
+    .prev-btn,
+    .next-btn {
+      position: absolute;
+      color: white;
+      background: rgba(0, 0, 0, 0.4);
+      border: none;
+      font-size: 2em;
+      cursor: pointer;
+      padding: 10px 15px;
+      border-radius: 50%;
+    }
+
+    .close-btn {
+      top: 20px;
+      right: 30px;
+    }
+
+    .prev-btn {
+      left: 30px;
+    }
+
+    .next-btn {
+      right: 30px;
+    }
+
+    @media (max-width: 600px) {
+      /* mobile */
+      header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 16px;
+      }
+
+      header > div { display:flex; align-items:center; gap:10px; }
+
+      /* hide normal nav on mobile, show when .open */
+      nav {
+        display: none;
+        position: absolute;
+        top: 64px;
+        right: 10px;
+        background: rgba(255,255,255,0.98);
+        flex-direction: column;
+        padding: 12px;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+        width: calc(100% - 40px);
+        max-width: 320px;
+        z-index: 50;
+      }
+
+      nav.open { display: flex; }
+
+      nav a { display: block; margin: 8px 0; padding: 8px 10px; border-radius: 6px; }
+
+      .nav-toggle { display: inline-block; margin-right: 8px; }
+      .language-btn { padding: 6px 10px; font-size: 0.95em; }
+
+      .hero { height: 50vh; padding: 20px; }
+      .hero h1 { font-size: 1.6em; }
+
+      .card-container { grid-template-columns: 1fr; gap: 12px; padding: 0 10px; }
+      .card img { height: 250px; }
+      .card p { font-size: 0.95rem; padding: 8px; }
+
+      .popup img { max-width: 95%; max-height: 70%; }
+    }
+
+    /* Instagram row inside Address */
+#address .insta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+#address .insta-row img {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+#address .insta-row a {
+  color: #e1306c;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1;
+}
+
+#address .insta-row a:hover {
+  text-decoration: underline;
+}
+
+
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+      /* tablet */
+      header { padding: 12px 20px; }
+      nav { display:flex; gap:12px; position: static; background: transparent; flex-direction: row; }
+      .nav-toggle { display:none; }
+
+      .hero { height: 60vh; }
+      .hero h1 { font-size: 2.2em; }
+
+      .card-container { grid-template-columns: repeat(2, 1fr); gap: 18px; padding: 0 20px; }
+      .card img { height: 380px; }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1399px) {
+      /* desktop */
+      .card-container { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+      .card img { height: 420px; }
+      .hero h1 { font-size: 2.6em; }
+    }
+
+    @media (min-width: 1400px) {
+      body {
+        max-width: 1400px;
+        margin: auto;
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+      .card img {
+        height: 380px;
+      }
+    }
+
+    @media (min-width: 1400px) {
+      body {
+        max-width: 1400px;
+        margin: auto;
+      }
+    }
+    .address-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.address-map iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 12px;
+}
+
+.address-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.address-box h3 {
+  margin-bottom: 10px;
+}
+
+.address-box p {
+  margin: 6px 0;
+  line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .address-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .address-box {
+    text-align: center;
+  }
+}
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">
+      <img src="images/ganesha-logo.jpg" alt="Sri Venkata Vinayaka Ganesha logo" width="56" height="56">
+      <span class="brand-text" data-en="Sri Venkata Vinayaka" data-te="శ్రీ వెంకట వినాయక">Sri Venkata Vinayaka</span>
+    </div>
+    <nav>
+      <a href="#home" data-en="Home" data-te="హోమ్">హోమ్</a>
+      <a href="#products" data-en="All Products" data-te="అన్ని ఉత్పత్తులు">అన్ని ఉత్పత్తులు</a>
+      <a href="#offers" data-en="Special Offers" data-te="ప్రత్యేక ఆఫర్లు">ప్రత్యేక ఆఫర్లు</a>
+      <a href="#contact" data-en="Contact Us" data-te="మమ్మల్ని సంప్రదించండి">మమ్మల్ని సంప్రదించండి</a>
+      <a href="#address" data-en="Address" data-te="చిరునామా">చిరునామా</a>
+    </nav>
+    <button class="language-btn nav-toggle" id="navToggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+    <button class="language-btn" id="langToggle">English</button>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <h2 class="visually-hidden">Home</h2>
+      <h1 data-en="Sri Venkata Vinayaka German Silver" data-te="శ్రీ వెంకట వినాయక జర్మన్ సిల్వర్">
+        శ్రీ వెంకట వినాయక జర్మన్ సిల్వర్
+      </h1>
+      <p data-en="Tradition Meets Shine — Only at Sri Venkata Vinayaka"
+        data-te="సంప్రదాయం మెరిసే జర్మన్ సిల్వర్ దుకాణం">
+        సంప్రదాయం మెరిసే జర్మన్ సిల్వర్ దుకాణం
+      </p>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products">
+      <h2 data-en="All Products" data-te="అన్ని ఉత్పత్తులు">అన్ని ఉత్పత్తులు</h2>
+      <div class="card-container" id="productContainer">
+        <div class="card"><img src="../images/deepam-kundulu.jpg" alt="German silver deepam kundulu lamp" data-en-alt="German silver deepam kundulu lamp" data-te-alt="దీపం కుండులు">
+          <p data-en="deepam-kundulu." data-te="దీపం-కుండులు">deepam-kundulu.</p>
+        </div>
+        <div class="card"><img src="../images/Mini-Pooja-Set.jpg" alt="German silver mini pooja set" data-en-alt="German silver mini pooja set" data-te-alt="చిన్న పూజా సెట్">
+          <p data-en="Mini-Pooja-Set" data-te="చిన్న పూజా సెట్">Mini-Pooja-Set</p>
+        </div>
+        <div class="card"><img src="../images/108-FlowerStand.jpg" alt="German silver 108 flower stand" data-en-alt="German silver 108 flower stand" data-te-alt="108-పూల్ స్టాండ్">
+          <p data-en="108-FlowerStand" data-te="108-పూల్ స్టాండ్">108-FlowerStand</p>
+        </div>
+        <div class="card"><img src="../images/Desgin-Plates.jpg" alt="German silver design plates" data-en-alt="German silver design plates" data-te-alt="డిజైన్ ప్లేట్లు">
+          <p data-en="Desgin-Plates" data-te="డిజైన్ ప్లేట్లు">Desgin-Plates</p>
+        </div>
+        <div class="card"><img src="../images/Shanku-chakra-chambulu.jpg" alt="German silver shanku chakra chambulu" data-en-alt="German silver shanku chakra chambulu" data-te-alt="శంఖు-చక్ర-చాంబులు">
+          <p data-en="Shanku-chakra-chambulu" data-te="శంఖు-చక్ర-చాంబులు">Shanku-chakra-chambulu</p>
+        </div>
+        <div class="card"><img src="../images/Poojathaliset.jpg" alt="German silver pooja thali set" data-en-alt="German silver pooja thali set" data-te-alt="పూజా తాళి సెట్">
+          <p data-en="Poojathaliset" data-te="పూజా తాళి సెట్">Poojathaliset</p>
+        </div>
+        <div class="card"><img src="../images/Ganesha-deepak.jpg" alt="German silver ganesha deepak lamp" data-en-alt="German silver ganesha deepak lamp" data-te-alt="గణేశా దీపక">
+          <p data-en="Ganesha-deepak" data-te="గణేశా-దీపక">Ganesha-deepak</p>
+        </div>
+        <div class="card"><img src="../images/Antique-Deepam-Kundulu.jpg" alt="Antique german silver deepam kundulu" data-en-alt="Antique german silver deepam kundulu" data-te-alt="ప్రాచిన దీపం కుండులు">
+          <p data-en="Antique-Deepam-Kundulu" data-te="ప్రాచీన-దీపం-కుండులు">Antique-Deepam-Kundulu</p>
+        </div>
+        <div class="card"><img src="../images/Radhakrishnan-idol.jpg" alt="German silver radha krishna idol" data-en-alt="German silver radha krishna idol" data-te-alt="రాధా-కృష్ణ-విగ్రహం">
+          <p data-en="Radhakrishnan-idol" data-te="రాధాకృష్ణ-విగ్రహం">Radhakrishnan-idol</p>
+        </div>
+        <div class="card"><img src="../images/Astalakshmi-Chambuand-Bindey.jpg" alt="German silver ashtalakshmi chambu bindey" data-en-alt="German silver ashtalakshmi chambu bindey" data-te-alt="అష్టలక్ష్మి-చాంబు-బిండి">
+          <p data-en="Astalakshmi-Chambuand-Bindey" data-te="అష్టలక్ష్మి-చాంబు-బిండి">Astalakshmi-Chambuand-Bindey</p>
+        </div>
+        <div class="card"><img src="../images/Kamakshi-deepam.jpg" alt="German silver kamakshi deepam" data-en-alt="German silver kamakshi deepam" data-te-alt="కామాక్షి-దీపం">
+          <p data-en="Kamakshi-deepam" data-te="కామాక్షి-దీపం">Kamakshi-deepam</p>
+        </div>
+        <div class="card"><img src="../images/Copper-Fancy-jar.jpg" alt="Copper fancy jar" data-en-alt="Copper fancy jar" data-te-alt="కాపర్-ఫ్యాన్సీ-జార్">
+          <p data-en="Copper-Fancy-jar" data-te="కాపర్-ఫ్యాన్సీ-జార్">Copper-Fancy-jar</p>
+        </div>
+        <div class="card"><img src="../images/Gandhapu-ginnelu.jpg" alt="Gandhapu ginnelu bowls" data-en-alt="Gandhapu ginnelu bowls" data-te-alt="గంధపు-గిన్నెలు">
+          <p data-en="Gandhapu-ginnelu" data-te="గంధపు-గిన్నెలు">Gandhapu-ginnelu</p>
+        </div>
+        <div class="card"><img src="../images/Impported-Desgin-Trays.jpg" alt="Imported german silver design trays" data-en-alt="Imported german silver design trays" data-te-alt="ఇంపోర్టెడ్-డిజైన్-ట్రేలు">
+          <p data-en="Imported-Desgin-Trays" data-te="ఇంపోర్టెడ్-డిజైన్-ట్రేలు">Imported-Desgin-Trays</p>
+        </div>
+        <div class="card"><img src="../images/Deepam Kundulu.jpg" alt="German silver deepam kundulu" data-en-alt="German silver deepam kundulu" data-te-alt="దీపం-కుండులు">
+          <p data-en="Deepam Kundulu" data-te="దీపం-కుండులు">Deepam Kundulu</p>
+        </div>
+        <div class="card"><img src="../images/Pichwari-Jars.jpg" alt="Pichwari jars" data-en-alt="Pichwari jars" data-te-alt="పిచ్వారీ-జార్లు">
+          <p data-en="Pichwari-Jars" data-te="పిచ్వారీ-జార్లు">Pichwari-Jars</p>
+        </div>
+        <div class="card"><img src="../images/Peacock-Pasupu-Kunkuma.jpg" alt="Peacock pasupu kunkuma box" data-en-alt="Peacock pasupu kunkuma box" data-te-alt="మయూర-పసుపు-కుంకుమా">
+          <p data-en="Peacock-Pasupu-Kunkuma" data-te="మయూర-పసుపు-కుంకుమా">Peacock-Pasupu-Kunkuma</p>
+        </div>
+        
+      <!--add more cards here-->
+      </div>
+      
+    </section>
+
+    <!-- OFFERS -->
+    <section id="offers">
+      <h2 data-en="Special Offers" data-te="ప్రత్యేక ఆఫర్లు">ప్రత్యేక ఆఫర్లు</h2>
+      <div class="card-container" id="offerContainer">
+        <div class="card"><img src="../images/Ganesha-deepak.jpg" alt="German silver ganesha deepak lamp" data-en-alt="German silver ganesha deepak lamp" data-te-alt="గణేశా-దీపక">
+          <p data-en="Ganesha-deepak" data-te="గణేశా-దీపక">Ganesha-deepak</p>
+        </div>
+        <div class="card"><img src="../images/Antique-Deepam-Kundulu.jpg" alt="Antique german silver deepam kundulu" data-en-alt="Antique german silver deepam kundulu" data-te-alt="ప్రాచీన-దీపం-కుండులు">
+          <p data-en="Antique-Deepam-Kundulu" data-te="ప్రాచీన-దీపం-కుండులు">Antique-Deepam-Kundulu</p>
+        </div>
+        <div class="card"><img src="../images/Radhakrishnan-idol.jpg" alt="German silver radha krishna idol" data-en-alt="German silver radha krishna idol" data-te-alt="రాధాకృష్ణ-విగ్రహం">
+          <p data-en="Radhakrishnan-idol" data-te="రాధాకృష్ణ-విగ్రహం">Radhakrishnan-idol</p>
+        </div>
+        <div class="card"><img src="../images/Astalakshmi-Chambuand-Bindey.jpg" alt="German silver ashtalakshmi chambu bindey" data-en-alt="German silver ashtalakshmi chambu bindey" data-te-alt="అష్టలక్ష్మి-చాంబు-బిండి">
+          <p data-en="Astalakshmi-Chambuand-Bindey" data-te="అష్టలక్ష్మి-చాంబు-బిండి">Astalakshmi-Chambuand-Bindey</p>
+        </div>
+        <div class="card"><img src="../images/Kamakshi-deepam.jpg" alt="German silver kamakshi deepam" data-en-alt="German silver kamakshi deepam" data-te-alt="కామాక్షి-దీపం">
+          <p data-en="Kamakshi-deepam" data-te="కామాక్షి-దీపం">Kamakshi-deepam</p>
+        </div>
+        <div class="card"><img src="../images/Copper-Fancy-jar.jpg" alt="Copper fancy jar" data-en-alt="Copper fancy jar" data-te-alt="కాపర్-ఫ్యాన్సీ-జార్">
+          <p data-en="Copper-Fancy-jar" data-te="కాపర్-ఫ్యాన్సీ-జార్">Copper-Fancy-jar</p>
+        </div>
+        <!--add more cards here-->
+      </div>
+    </section>
+
+ <!-- ADDRESS -->
+<section id="address">
+  <h2 data-en="Shop Address" data-te="దుకాణ చిరునామా">దుకాణ చిరునామా</h2>
+
+  <div class="address-wrapper">
+
+    <!-- LEFT : MAP -->
+    <div class="address-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3816.537190521516!2d82.22706019878386!3d16.948106606233065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a38275ed1e46d1f%3A0xf9cbafa8b16d8010!2sSRI%20VENKATA%20VINAYAKA%20GERMAN%20SILVER!5e0!3m2!1sen!2sin!4v1768116243095!5m2!1sen!2sin"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <!-- RIGHT : ADDRESS DETAILS -->
+    <div class="address-box">
+      <h3 data-en="Sri Venkata Vinayaka German Silver" data-te="శ్రీ వెంకట వినాయక జర్మన్ సిల్వర్">
+        Sri Venkata Vinayaka German Silver
+      </h3>
+
+      <p data-en="All fancy and gift items available"
+         data-te="అన్ని ఫ్యాన్సీ మరియు బహుమతి వస్తువులు అందుబాటులో ఉన్నాయి">
+        All fancy and gift items available
+      </p>
+
+      <p
+        data-en="Sri Sai Bhavan, Opp to Kalyan Jewellers, Rajaji Street, Kakinada"
+        data-te="శ్రీ సాయి భవన్, కళ్యాణ్ జ్యువెలర్స్ ఎదురుగా, రాజాజీ వీధి, కాకినాడ">
+        Sri Sai Bhavan, Opp to Kalyan Jewellers, Rajaji Street, Kakinada
+      </p>
+
+      <p>
+        📞 <a href="tel:8639487578">8639487578</a>
+      </p>
+
+      <p
+        data-en="Opening Hours: 10:30 AM – 09:00 PM"
+        data-te="స్టోర్ సమయం: ఉదయం 10:30 – రాత్రి 9:00">
+        Opening Hours: 10:30 AM – 09:00 PM
+      </p>
+
+      <p>
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=Sri+Venkata+Vinayaka+German+Silver+Kakinada"
+          target="_blank"
+          style="font-weight:600; color:#c14b2a; text-decoration:none;">
+          📍 Get Directions
+        </a>
+      </p>
+      <!-- Instagram -->
+        <img
+    src="images/instagram-logo.jpg"
+    alt="Instagram logo"
+    width="22"
+    height="22"
+    loading="lazy"
+  >
+      
+      <a
+        href="https://www.instagram.com/germansilverkakinada_?igsh=NmNlNjNkdm5mcm95"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="color:#e1306c; font-weight:600; text-decoration:none;"
+      >
+        @germansilverkakinada_
+      </a>
+    
+    <!-- End Instagram -->
+    </div>
+
+  </div>
+</section>
+
+
+  </main>
+  <div class="popup" id="popup">
+    <button class="close-btn" id="closePopup">×</button>
+    <button class="prev-btn" id="prevBtn">❮</button>
+
+    <img id="popupImg" src="" alt="Product view">
+    <p id="popupCaption"></p>
+
+    <button class="next-btn" id="nextBtn">❯</button>
+  </div>
+
+
+ <footer class="site-footer" id="contact">
+  <div class="footer-content">
+
+   <h3>German Silver SVV</h3>
+  <p>Sri Venkata Vinayaka German Silver</p>
+
+
+    <p>
+      Sri Sai Bhavan, Rajaji Street,<br>
+      Kakinada, Andhra Pradesh
+    </p>
+
+    <p>
+      📞 <a href="tel:8639487578">8639487578</a>
+    </p>
+
+    <p>
+      🕒 10:30 AM – 09:00 PM
+    </p>
+
+    <p>
+      📍
+      <a
+        href="https://www.google.com/maps/dir/?api=1&destination=Sri+Venkata+Vinayaka+German+Silver+Kakinada"
+        target="_blank">
+        Get Directions
+      </a>
+    </p>
+
+    <hr>
+      <img
+    src="images/instagram-logo.jpg"
+    alt="Instagram logo"
+    width="22"
+    height="22"
+    loading="lazy"
+  >
+    <p>   
+      <a
+        href="https://www.instagram.com/germansilverkakinada_?igsh=NmNlNjNkdm5mcm95"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="color:#e1306c; font-weight:600; text-decoration:none;"
+      >
+        @germansilverkakinada_
+      </a>
+    </p>
+
+    <p class="copyright">
+      © 2026 Sri Venkata Vinayaka German Silver. All rights reserved.
+    </p>
+
+    <p style="display:flex; align-items:center; gap:8px; justify-content:center;">
+
+
+  </div>
+</footer>
+
+
+
+
+
+
+  <script>
+    // Popup Logic for Products/Offers
+    const popup = document.getElementById("popup");
+    const popupImg = document.getElementById("popupImg");
+    const popupCaption = document.getElementById("popupCaption");
+    const closePopup = document.getElementById("closePopup");
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+
+    let images = [];
+    let cards = []; // keep references to card elements so captions follow language changes
+    let currentIndex = 0;
+
+    // Build images array and card references
+    document.querySelectorAll(".card").forEach((card, index) => {
+      const img = card.querySelector("img");
+
+      images.push(img.src);
+      cards.push(card);
+
+      img.addEventListener("click", () => {
+        popup.style.display = "flex";
+        currentIndex = index;
+        showImage(currentIndex);
+      });
+    });
+
+    function showImage(index) {
+      if (index < 0) index = images.length - 1;
+      if (index >= images.length) index = 0;
+
+      currentIndex = index;
+      popupImg.src = images[currentIndex];
+
+      // Get the caption from the card's <p> (which will be updated when language changes)
+      const card = cards[currentIndex];
+      const captionEl = card.querySelector('p');
+      popupCaption.innerText = captionEl ? captionEl.innerText : '';
+    }
+
+    nextBtn.onclick = () => showImage(currentIndex + 1);
+    prevBtn.onclick = () => showImage(currentIndex - 1);
+    closePopup.onclick = () => (popup.style.display = "none");
+
+    window.onclick = (e) => {
+      if (e.target === popup) popup.style.display = "none";
+    };
+
+    // Language toggle
+    const langToggle = document.getElementById("langToggle");
+    let currentLang = document.documentElement.lang || 'te';
+
+    function updateToggleButton() {
+      langToggle.innerText = currentLang === 'en' ? 'English' : 'తెలుగు';
+    }
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+
+      // Update all elements that have data-en/data-te or HTML variants (data-en-html / data-te-html)
+      document.querySelectorAll('[data-en], [data-en-html]').forEach(el => {
+        const enHtml = el.getAttribute('data-en-html');
+        const teHtml = el.getAttribute('data-te-html');
+        if (enHtml || teHtml) {
+          const html = (lang === 'en') ? (enHtml || el.getAttribute('data-en') || '') : (teHtml || el.getAttribute('data-te') || '');
+          el.innerHTML = html;
+        } else {
+          const en = el.getAttribute('data-en');
+          const te = el.getAttribute('data-te') || en;
+          el.innerText = (lang === 'en') ? en : te;
+        }
+      });
+
+      // Update image alt attributes using data-en-alt / data-te-alt
+      document.querySelectorAll('.card img').forEach(img => {
+        const enAlt = img.getAttribute('data-en-alt') || img.alt || '';
+        const teAlt = img.getAttribute('data-te-alt') || enAlt;
+        img.alt = (lang === 'en') ? enAlt : teAlt;
+      });
+
+      // Update popup caption if open
+      if (popup.style.display === 'flex') {
+        const captionEl = cards[currentIndex].querySelector('p');
+        popupCaption.innerText = captionEl ? captionEl.innerText : '';
+      }
+
+      updateToggleButton();
+    }
+
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navElement = document.querySelector('nav');
+
+    if (navToggle) {
+      navToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = navElement.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', !!isOpen);
+      });
+
+      // Close nav when clicking a link (mobile)
+      navElement.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 600) {
+            navElement.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+
+      // Close nav when clicking outside
+      window.addEventListener('click', (e) => {
+        if (!navElement.contains(e.target) && e.target !== navToggle) {
+          navElement.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    // Toggle behavior on language button click
+    langToggle.addEventListener('click', () => {
+      setLanguage(currentLang === 'en' ? 'te' : 'en');
+      // close nav on small screens to show changes clearly
+      if (window.innerWidth <= 600 && navElement) {
+        navElement.classList.remove('open');
+        if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Initialize page language on load
+    setLanguage(currentLang);
+
+
+
+
+
+  </script>
+
+
+
+
+</body>
+
+</html>
